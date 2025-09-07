@@ -1,0 +1,525 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Kontakt & Anfahrt - Gina's Landhaus | Buchung & Informationen"
+  description="Kontaktieren Sie uns für Buchungen und Informationen. Gina's Landhaus - Ihr Ferienhaus im Pinkertal, Österreich. Telefon, E-Mail und Anfahrtsbeschreibung."
+  ogImage="/images/og-contact.jpg"
+>
+  <Header />
+
+  <main class="contact-page">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Kontakt & Anfahrt</h1>
+        <p>Wir freuen uns auf Ihre Anfrage</p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>Kontaktdaten</h2>
+            
+            <div class="contact-item">
+              <h3>Adresse</h3>
+              <p>
+                Gina's Landhaus im Pinkertal<br>
+                Hauptplatz 11<br>
+                7521 Eberau<br>
+                Österreich
+              </p>
+            </div>
+
+            <div class="contact-item">
+              <h3>Telefon & E-Mail</h3>
+              <p>
+                <strong>Telefon:</strong> <a href="tel:+436643223369">+43 664 322 33 69</a><br>
+                <strong>E-Mail:</strong> <a href="mailto:office@ginas-landhaus.at">office@ginas-landhaus.at</a>
+              </p>
+            </div>
+
+            <div class="contact-item">
+              <h3>Verfügbarkeit</h3>
+              <p>
+                <strong>Check-in:</strong> ab 15:00 Uhr<br>
+                <strong>Check-out:</strong> bis 11:00 Uhr<br>
+                <strong>Mindestaufenthalt:</strong> 2 Nächte<br><br>
+                <strong>Buchungsanfragen:</strong><br>
+                Täglich: 8:00 - 20:00 Uhr
+              </p>
+            </div>
+
+            <div class="contact-item">
+              <h3>Social Media</h3>
+              <div class="social-links">
+                <a href="#" class="social-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                  Facebook
+                </a>
+                <a href="#" class="social-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                  Instagram
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-section">
+            <h2>Anfrage senden</h2>
+            <form class="contact-form" id="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">Vorname *</label>
+                  <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Nachname *</label>
+                  <input type="text" id="lastName" name="lastName" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-Mail Adresse *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Telefonnummer</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="checkin">Anreise *</label>
+                  <input type="date" id="checkin" name="checkin" required>
+                </div>
+                <div class="form-group">
+                  <label for="checkout">Abreise *</label>
+                  <input type="date" id="checkout" name="checkout" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="guests">Anzahl Gäste *</label>
+                <select id="guests" name="guests" required>
+                  <option value="">Bitte wählen</option>
+                  <option value="1">1 Person</option>
+                  <option value="2">2 Personen</option>
+                  <option value="3">3 Personen</option>
+                  <option value="4">4 Personen</option>
+                  <option value="5">5 Personen</option>
+                  <option value="6">6 Personen</option>
+                  <option value="7">7 Personen</option>
+                  <option value="8">8 Personen</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Nachricht</label>
+                <textarea id="message" name="message" rows="5" placeholder="Haben Sie besondere Wünsche oder Fragen? Teilen Sie uns diese gerne mit..."></textarea>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="privacy" name="privacy" required>
+                  <span class="checkmark"></span>
+                  Ich stimme der <a href="/datenschutz">Datenschutzerklärung</a> zu *
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-submit">Anfrage senden</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <div class="container">
+        <h2>Anfahrt nach Eberau</h2>
+        <div class="map-content">
+          <div class="map-placeholder">
+            <div class="route-planning-box">
+              <h3>Routenplanung</h3>
+              <p><strong>Gina's Landhaus im Pinkertal</strong><br>
+                 Hauptplatz 11, 7521 Eberau, Österreich</p>
+              
+              <div class="route-buttons">
+                <a href="https://www.google.com/maps/dir//Gina's+Landhaus+im+Pinkertal,+Hauptplatz+11,+7521+Eberau,+Austria" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="route-btn google">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                  Google Maps
+                </a>
+                
+                <a href="https://www.openstreetmap.org/directions?from=&to=47.0833%2C16.3167#map=15/47.0833/16.3167" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="route-btn osm">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                  OpenStreetMap
+                </a>
+              </div>
+              
+              <div class="coordinates">
+                <p><strong>GPS Koordinaten:</strong><br>
+                   47.0833° N, 16.3167° E</p>
+              </div>
+            </div>
+          </div>
+          <div class="directions">
+            <h3>Anreise mit dem Auto</h3>
+            <p>
+              Von Wien: Nehmen Sie die A2 Richtung Graz bis zur Ausfahrt Hartberg/Fürstenfeld. 
+              Folgen Sie der B54 Richtung Fürstenfeld und dann der B57 nach Eberau. 
+              Unser Ferienhaus finden Sie direkt am Hauptplatz.
+            </p>
+            
+            <h3>Anreise mit der Bahn</h3>
+            <p>
+              Nächster Bahnhof: Fürstenfeld (ca. 15 km entfernt). 
+              Von dort können Sie mit dem Bus oder Taxi nach Eberau fahren. 
+              Gerne holen wir Sie auch ab - sprechen Sie uns einfach an!
+            </p>
+            
+            <h3>Anreise mit dem Fahrrad</h3>
+            <p>
+              Eberau liegt am beliebten Thermenradweg und ist gut mit dem Fahrrad erreichbar. 
+              Sichere Fahrradstellplätze stehen kostenlos zur Verfügung. 
+              Das Pinkertal bietet wunderschöne Radwege durch die Natur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contact-form') as HTMLFormElement;
+    
+    form?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      // Basic form validation
+      const formData = new FormData(form);
+      const firstName = formData.get('firstName') as string;
+      const lastName = formData.get('lastName') as string;
+      const email = formData.get('email') as string;
+      const checkin = formData.get('checkin') as string;
+      const checkout = formData.get('checkout') as string;
+      const guests = formData.get('guests') as string;
+      const privacy = formData.get('privacy') as string;
+      
+      if (!firstName || !lastName || !email || !checkin || !checkout || !guests || !privacy) {
+        alert('Bitte füllen Sie alle Pflichtfelder aus.');
+        return;
+      }
+      
+      // Date validation
+      const checkinDate = new Date(checkin);
+      const checkoutDate = new Date(checkout);
+      
+      if (checkinDate >= checkoutDate) {
+        alert('Das Abreisedatum muss nach dem Anreisedatum liegen.');
+        return;
+      }
+      
+      // Here you would typically send the form data to your server
+      alert('Vielen Dank für Ihre Anfrage! Wir melden uns schnellstmöglich bei Ihnen.');
+      form.reset();
+    });
+  });
+</script>
+
+<style>
+  .contact-page {
+    margin-top: 80px;
+  }
+
+  .page-hero {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-wine) 100%);
+    color: white;
+    padding: var(--spacing-2xl) 0;
+    text-align: center;
+  }
+
+  .page-hero h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .page-hero p {
+    font-size: 1.25rem;
+    color: var(--color-cream);
+  }
+
+  .contact-section {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+  }
+
+  .contact-info h2,
+  .contact-form-section h2 {
+    color: var(--color-primary);
+    font-size: 2rem;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .contact-item {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .contact-item h3 {
+    color: var(--color-wine);
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .contact-item p {
+    line-height: 1.6;
+    color: var(--color-text-light);
+  }
+
+  .contact-item a {
+    color: var(--color-wine);
+    text-decoration: none;
+  }
+
+  .contact-item a:hover {
+    text-decoration: underline;
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .social-link {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--color-wine);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .social-link:hover {
+    color: var(--color-primary);
+  }
+
+  .contact-form {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .form-group {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-weight: 600;
+    color: var(--color-text);
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border: 2px solid #e5e7eb;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-wine);
+  }
+
+  .checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+
+  .checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    cursor: pointer;
+    line-height: 1.5;
+  }
+
+  .checkbox-label input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+  }
+
+  .btn-submit {
+    width: 100%;
+    padding: var(--spacing-md);
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+
+  .map-section {
+    background: var(--color-cream);
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .map-section h2 {
+    text-align: center;
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .map-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-2xl);
+  }
+
+  .map-placeholder {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-md);
+  }
+
+  .route-planning-box h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+  }
+
+  .route-planning-box p {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-text-light);
+  }
+
+  .route-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .route-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+
+  .route-btn.google {
+    background: #4285f4;
+    color: white;
+  }
+
+  .route-btn.osm {
+    background: #7ebc6f;
+    color: white;
+  }
+
+  .route-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .coordinates {
+    text-align: center;
+    background: var(--color-cream);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+  }
+
+  .coordinates p {
+    margin: 0;
+    color: var(--color-text-light);
+    font-size: 0.875rem;
+  }
+
+  .directions h3 {
+    color: var(--color-wine);
+    margin-bottom: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+  }
+
+  .directions h3:first-child {
+    margin-top: 0;
+  }
+
+  .directions p {
+    color: var(--color-text-light);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+  }
+
+  @media (max-width: 768px) {
+    .page-hero h1 {
+      font-size: 2rem;
+    }
+
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-xl);
+    }
+
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+
+    .map-content {
+      grid-template-columns: 1fr;
+    }
+
+    .map-section h2 {
+      font-size: 2rem;
+    }
+  }
+</style>

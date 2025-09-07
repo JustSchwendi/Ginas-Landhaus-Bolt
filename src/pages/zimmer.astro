@@ -1,0 +1,336 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Gemütliche Zimmer in Gina's Landhaus | Übernachtung im Weinland"
+  description="Entdecken Sie unsere liebevoll eingerichteten Zimmer im Gina's Landhaus. Komfortable Übernachtungsmöglichkeiten für Radtouristen und Erholungssuchende im Herzen des Weinlandes."
+  ogImage="/images/og-rooms.jpg"
+>
+  <Header />
+
+  <main class="rooms-page">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Unsere Zimmer</h1>
+        <p>Gemütliche Übernachtungsmöglichkeiten für jeden Geschmack</p>
+      </div>
+    </section>
+
+    <section class="rooms-section">
+      <div class="container">
+        <div class="rooms-grid">
+          <div class="room-card">
+            <div class="room-image">
+              <img 
+                src="/images/room-comfort.jpg" 
+                alt="Komfort Doppelzimmer"
+                loading="lazy"
+                width="400"
+                height="300"
+              />
+            </div>
+            <div class="room-content">
+              <h3>Komfort Doppelzimmer</h3>
+              <div class="room-features">
+                <span class="feature">25 m²</span>
+                <span class="feature">Balkon</span>
+                <span class="feature">Bad/Dusche</span>
+                <span class="feature">TV</span>
+              </div>
+              <p>
+                Unser gemütliches Doppelzimmer bietet alles, was Sie für einen 
+                erholsamen Aufenthalt benötigen. Der kleine Balkon lädt zum 
+                Verweilen mit Blick in die Weinberge ein.
+              </p>
+              <div class="room-price">
+                <span class="price">ab 75€</span>
+                <span class="price-note">pro Nacht</span>
+              </div>
+              <a href="/kontakt" class="btn">Jetzt anfragen</a>
+            </div>
+          </div>
+
+          <div class="room-card">
+            <div class="room-image">
+              <img 
+                src="/images/room-deluxe.jpg" 
+                alt="Deluxe Zimmer mit Weinbergblick"
+                loading="lazy"
+                width="400"
+                height="300"
+              />
+            </div>
+            <div class="room-content">
+              <h3>Deluxe Weinbergblick</h3>
+              <div class="room-features">
+                <span class="feature">35 m²</span>
+                <span class="feature">Weinbergblick</span>
+                <span class="feature">Sitzecke</span>
+                <span class="feature">Premium Bad</span>
+              </div>
+              <p>
+                Unser schönstes Zimmer mit atemberaubendem Blick über die 
+                Weinberge. Die gemütliche Sitzecke und das luxuriöse Bad 
+                machen Ihren Aufenthalt unvergesslich.
+              </p>
+              <div class="room-price">
+                <span class="price">ab 95€</span>
+                <span class="price-note">pro Nacht</span>
+              </div>
+              <a href="/kontakt" class="btn">Jetzt anfragen</a>
+            </div>
+          </div>
+
+          <div class="room-card">
+            <div class="room-image">
+              <img 
+                src="/images/room-single.jpg" 
+                alt="Einzelzimmer für Radreisende"
+                loading="lazy"
+                width="400"
+                height="300"
+              />
+            </div>
+            <div class="room-content">
+              <h3>Einzelzimmer Radler</h3>
+              <div class="room-features">
+                <span class="feature">18 m²</span>
+                <span class="feature">Bike-Service</span>
+                <span class="feature">Bad/Dusche</span>
+                <span class="feature">WLAN</span>
+              </div>
+              <p>
+                Perfekt für Alleinreisende und Radtouristen. Kompakt, aber 
+                komfortabel eingerichtet mit allem, was das Radlerherz begehrt. 
+                Inklusive kostenlosem Bike-Service.
+              </p>
+              <div class="room-price">
+                <span class="price">ab 55€</span>
+                <span class="price-note">pro Nacht</span>
+              </div>
+              <a href="/kontakt" class="btn">Jetzt anfragen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="amenities-section">
+      <div class="container">
+        <h2>Ausstattung & Service</h2>
+        <div class="amenities-grid">
+          <div class="amenity">
+            <h4>Fahrradfreundlich</h4>
+            <ul>
+              <li>Sichere, abschließbare Fahrradgarage</li>
+              <li>Trockenraum für Kleidung und Ausrüstung</li>
+              <li>Kostenloser Reparaturservice</li>
+              <li>E-Bike Ladestation</li>
+            </ul>
+          </div>
+          <div class="amenity">
+            <h4>Komfort</h4>
+            <ul>
+              <li>Kostenloses WLAN in allen Zimmern</li>
+              <li>Täglicher Reinigungsservice</li>
+              <li>Föhn und Pflegeprodukte</li>
+              <li>Kaffee- und Teestation</li>
+            </ul>
+          </div>
+          <div class="amenity">
+            <h4>Zusatzleistungen</h4>
+            <ul>
+              <li>Reichhaltiges Frühstücksbuffet</li>
+              <li>Lunchpakete für Radtouren</li>
+              <li>Wäscheservice</li>
+              <li>Tourberatung und Kartenmaterial</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .rooms-page {
+    margin-top: 80px;
+  }
+
+  .page-hero {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-wine) 100%);
+    color: white;
+    padding: var(--spacing-2xl) 0;
+    text-align: center;
+  }
+
+  .page-hero h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .page-hero p {
+    font-size: 1.25rem;
+    color: var(--color-cream);
+  }
+
+  .rooms-section {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-xl);
+  }
+
+  .room-card {
+    background: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .room-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .room-image {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .room-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .room-card:hover .room-image img {
+    transform: scale(1.05);
+  }
+
+  .room-content {
+    padding: var(--spacing-xl);
+  }
+
+  .room-content h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.5rem;
+  }
+
+  .room-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .feature {
+    background: var(--color-cream);
+    color: var(--color-text);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .room-content p {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.6;
+  }
+
+  .room-price {
+    display: flex;
+    align-items: baseline;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .price {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-wine);
+  }
+
+  .price-note {
+    color: var(--color-text-light);
+    font-size: 0.875rem;
+  }
+
+  .amenities-section {
+    background: var(--color-cream);
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .amenities-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-2xl);
+    color: var(--color-primary);
+  }
+
+  .amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+  }
+
+  .amenity {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .amenity h4 {
+    color: var(--color-wine);
+    margin-bottom: var(--spacing-lg);
+    font-size: 1.25rem;
+  }
+
+  .amenity ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .amenity li {
+    padding: var(--spacing-xs) 0;
+    position: relative;
+    padding-left: var(--spacing-lg);
+    color: var(--color-text-light);
+  }
+
+  .amenity li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-nature);
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    .page-hero h1 {
+      font-size: 2rem;
+    }
+
+    .rooms-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .amenities-section h2 {
+      font-size: 2rem;
+    }
+  }
+</style>

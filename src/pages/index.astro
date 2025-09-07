@@ -1,0 +1,927 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Footer from '../components/Footer.astro';
+import CookieConsent from '../components/CookieConsent.astro';
+---
+
+<Layout 
+  title="Gina's Landhaus - Ferienhaus im Weinland | Komplettes Haus mieten"
+  description="Mieten Sie Gina's Landhaus komplett für Ihren Urlaub im Weinland. Perfekt für Gruppen, Familien und Radtouristen. Gemütliches Ferienhaus mit allem Komfort."
+  ogImage="/images/01-aussenansicht.webp"
+>
+  <Header />
+  
+  <Hero 
+    title="Willkommen in Gina's Landhaus"
+    subtitle="Ihr komplettes Ferienhaus im Herzen des Weinlandes - Perfekt für Weingenießer, Fahrradtouren und Familien"
+    backgroundImage="/images/02-park-vor-dem-haus.webp"
+    ctaText="Jetzt buchen"
+    ctaLink="#booking-section"
+  />
+
+  <!-- Smoobu Calendar Widget -->
+  <section class="calendar-widget-section">
+    <div class="container">
+      <div class="calendar-widget-content">
+        <h2>Verfügbarkeit prüfen</h2>
+        <p>Sehen Sie hier unsere aktuellen Verfügbarkeiten und wählen Sie Ihren Wunschtermin:</p>
+        <div class="calendar-container">
+          <div id="smoobuApartment2858166de" class="calendarWidget">
+            <div class="calendarContent" 
+                 data-load-calendar-url="https://login.smoobu.com/de/cockpit/widget/single-calendar/2858166" 
+                 data-verification="8be1893a3b799bb8bea84d94f9ce999f65efd27c73412e0782c07b18de396650" 
+                 data-baseUrl="https://login.smoobu.com" 
+                 data-disable-css="false">
+            </div>
+            <script type="text/javascript" src="https://login.smoobu.com/js/Apartment/CalendarWidget.js" defer></script>
+          </div>
+        </div>
+        <div class="calendar-help">
+          <p><strong>So funktioniert's:</strong></p>
+          <ol>
+            <li>Wählen Sie Ihr gewünschtes Anreisedatum im Kalender</li>
+            <li>Wählen Sie Ihr Abreisedatum (mindestens 2 Nächte)</li>
+            <li>Scrollen Sie nach unten zum Buchungsformular</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="main-content">
+    <section class="welcome-section">
+      <div class="container">
+        <div class="welcome-content">
+          <div class="welcome-text">
+            <h2>Ihr ganzes Ferienhaus</h2>
+            <p>
+              Gina's Landhaus ist ein charmantes Ferienhaus, das Sie komplett für sich 
+              und Ihre Gruppe mieten können. Unser traditionelles Landhaus bietet Platz 
+              für bis zu 6 Personen und ist der perfekte Ausgangspunkt für Ihren Urlaub 
+              im Weinland.
+            </p>
+            <p>
+              Ob Familienurlaub, Freundesgruppe oder Radtouristen - bei uns finden Sie 
+              die Ruhe und den Komfort, den Sie für einen unvergesslichen Aufenthalt 
+              benötigen. Das komplette Haus steht Ihnen zur Verfügung. Auch Ihre 
+              vierbeinigen Begleiter sind herzlich willkommen!
+            </p>
+            <div class="house-highlights">
+              <div class="highlight">
+                <div class="highlight-icon">
+                  <img src="/images/icon-bed.png" alt="Schlafzimmer Icon" width="32" height="32" />
+                </div>
+                <strong>Bis zu 6 Personen</strong>
+                <span>2 Schlafzimmer + Schlafcouch</span>
+              </div>
+              <div class="highlight">
+                <div class="highlight-icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                  </svg>
+                </div>
+                <strong>Komplettes Haus</strong>
+                <span>Nur für Sie</span>
+              </div>
+              <div class="highlight">
+                <div class="highlight-icon">
+                  <img src="/images/icon-running_sport.png" alt="Fahrrad Icon" width="32" height="32" />
+                </div>
+                <strong>Fahrradfreundlich</strong>
+                <span>Sichere Stellplätze & Service</span>
+              </div>
+              <div class="highlight">
+                <div class="highlight-icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M4.5 13.5C3.1 13.5 2 14.6 2 16s1.1 2.5 2.5 2.5S7 17.4 7 16s-1.1-2.5-2.5-2.5zM19.5 13.5c-1.4 0-2.5 1.1-2.5 2.5s1.1 2.5 2.5 2.5S22 17.4 22 16s-1.1-2.5-2.5-2.5zM12 11c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM7 11c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM17 11c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+                  </svg>
+                </div>
+                <strong>Haustierfreundlich</strong>
+                <span>Hunde willkommen</span>
+              </div>
+            </div>
+            <a href="/haus" class="btn btn-large">Das Haus entdecken</a>
+          </div>
+          <div class="welcome-image">
+            <img 
+              src="/images/04-ginas-landhaus.webp" 
+              alt="Gina's Landhaus Außenansicht"
+              loading="lazy"
+              width="600"
+              height="400"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-section">
+      <div class="container">
+        <h2 class="section-title">Warum Gina's Landhaus?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+              </svg>
+            </div>
+            <h3>Komplettes Ferienhaus</h3>
+            <p>Das ganze Haus gehört Ihnen. Keine anderen Gäste, maximale Privatsphäre und Komfort für Ihre Gruppe.</p>
+            <a href="/haus" class="feature-link">Mehr erfahren</a>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="/images/icon-running_sport.png" alt="Fahrrad Icon" width="64" height="64" />
+            </div>
+            <h3>Fahrradfreundlich</h3>
+            <p>Sichere Fahrradstellplätze, Trockenraum, Reparaturservice und die besten Radwege der Region direkt vor der Haustür.</p>
+            <a href="/region" class="feature-link">Radtouren entdecken</a>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="/images/icon-wine_drink.png" alt="Wein Icon" width="64" height="64" />
+            </div>
+            <h3>Weinland-Lage</h3>
+            <p>Mitten im Weinland gelegen, umgeben von Weinbergen und mit direktem Zugang zu Weingütern und Verkostungen.</p>
+            <a href="/region" class="feature-link">Region erkunden</a>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M4.5 13.5C3.1 13.5 2 14.6 2 16s1.1 2.5 2.5 2.5S7 17.4 7 16s-1.1-2.5-2.5-2.5zM19.5 13.5c-1.4 0-2.5 1.1-2.5 2.5s1.1 2.5 2.5 2.5S22 17.4 22 16s-1.1-2.5-2.5-2.5zM12 11c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM7 11c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM17 11c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+              </svg>
+            </div>
+            <h3>Haustierfreundlich</h3>
+            <p>Ihre vierbeinigen Familienmitglieder sind herzlich willkommen. Eingezäunter Garten und keine zusätzlichen Gebühren.</p>
+            <a href="/haus" class="feature-link">Ausstattung ansehen</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cycling-section">
+      <div class="container">
+        <h2 class="section-title">Paradies für Radfahrer</h2>
+        <div class="cycling-content">
+          <div class="cycling-text">
+            <h3>Perfekt ausgestattet für Ihre Radtour</h3>
+            <p>
+              Gina's Landhaus ist speziell auf die Bedürfnisse von Radtouristen ausgerichtet. 
+              Wir bieten Ihnen alles, was Sie für eine entspannte und sichere Radreise benötigen.
+            </p>
+            <div class="cycling-features">
+              <div class="cycling-feature">
+                <div class="feature-icon-small">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Sichere Fahrradgarage</strong>
+                  <p>Abschließbare Garage für bis zu 6 Fahrräder</p>
+                </div>
+              </div>
+              <div class="cycling-feature">
+                <div class="feature-icon-small">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Trockenraum</strong>
+                  <p>Für nasse Kleidung und Ausrüstung</p>
+                </div>
+              </div>
+              <div class="cycling-feature">
+                <div class="feature-icon-small">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Reparaturservice</strong>
+                  <p>Werkzeug und Hilfe bei kleineren Reparaturen</p>
+                </div>
+              </div>
+              <div class="cycling-feature">
+                <div class="feature-icon-small">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Routenberatung</strong>
+                  <p>Lokale Tipps und Kartenmaterial</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cycling-image">
+            <img 
+              src="/images/06-hof-fahrraeder-abstellplatz.webp" 
+              alt="Fahrradstellplatz bei Gina's Landhaus"
+              loading="lazy"
+              width="500"
+              height="400"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-section" id="booking-section">
+      <div class="container">
+        <div class="booking-content">
+          <h2>Jetzt buchen</h2>
+          <p>
+            Buchen Sie hier direkt Ihren Aufenthalt in Gina's Landhaus. 
+            Einfach, sicher und mit den besten Preisen.
+          </p>
+          
+          <!-- Smoobu Booking Widget -->
+          <div class="booking-widget-container">
+            <div id="apartmentIframeAll" class="booking-iframe">
+              <script type="text/javascript" src="https://login.smoobu.com/js/Settings/BookingToolIframe.js" defer></script>
+              <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                  if (typeof BookingToolIframe !== 'undefined') {
+                    BookingToolIframe.initialize({
+                      "url": "https://login.smoobu.com/de/booking-tool/iframe/1359421", 
+                      "baseUrl": "https://login.smoobu.com", 
+                      "target": "#apartmentIframeAll"
+                    });
+                  }
+                });
+              </script>
+            </div>
+          </div>
+          
+          <div class="alternative-platforms">
+            <h3>Alternative Buchungsmöglichkeiten</h3>
+            <p>Sie können auch über diese Plattformen buchen (höhere Preise durch Provisionen):</p>
+            <div class="alt-platforms">
+              <a href="#" class="platform-btn airbnb" aria-label="Auf Airbnb buchen">
+                <span class="platform-icon">🏠</span>
+                <span>Airbnb</span>
+                <small>+15% Provision</small>
+              </a>
+              <a href="#" class="platform-btn booking" aria-label="Auf Booking.com buchen">
+                <span class="platform-icon">🌐</span>
+                <span>Booking.com</span>
+                <small>+18% Provision</small>
+              </a>
+            </div>
+          </div>
+          
+          <div class="booking-info">
+            <div class="info-item">
+              <strong>Mindestaufenthalt:</strong> 2 Nächte
+            </div>
+            <div class="info-item">
+              <strong>Check-in:</strong> ab 15:00 Uhr
+            </div>
+            <div class="info-item">
+              <strong>Check-out:</strong> bis 11:00 Uhr
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section">
+      <div class="container">
+        <h2>Was unsere Gäste sagen</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>
+              "Ein wunderschönes Ferienhaus mit allem Komfort. Die Lage ist perfekt für Radtouren und die Gastgeber sind sehr herzlich. Wir kommen gerne wieder!"
+            </blockquote>
+            <cite>
+              <strong>Familie Schmidt</strong>
+              <span>München • Direkte Buchung</span>
+            </cite>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>
+              "Perfekt für unsere Radtour-Gruppe. Sichere Fahrradstellplätze und tolle Tipps für die schönsten Routen der Region. Sehr empfehlenswert!"
+            </blockquote>
+            <cite>
+              <strong>Radgruppe Köln</strong>
+              <span>Köln • Direkte Buchung</span>
+            </cite>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>
+              "Das Haus ist liebevoll eingerichtet und sehr sauber. Unser Hund hat sich im eingezäunten Garten sehr wohlgefühlt. Toller Service!"
+            </blockquote>
+            <cite>
+              <strong>Petra & Klaus mit Bello</strong>
+              <span>Hamburg • Direkte Buchung</span>
+            </cite>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+  <CookieConsent />
+</Layout>
+
+<style>
+  main {
+    margin-top: 80px;
+  }
+
+  .welcome-section {
+    padding: var(--spacing-2xl) 0;
+    background: var(--color-cream);
+  }
+
+  .welcome-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+    align-items: center;
+  }
+
+  .welcome-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-primary);
+  }
+
+  .house-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+  }
+
+  .highlight {
+    background: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s ease;
+  }
+
+  .highlight:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .highlight-icon {
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .highlight-icon img {
+    filter: sepia(1) saturate(2) hue-rotate(30deg);
+  }
+
+  .highlight strong {
+    display: block;
+    color: var(--color-wine);
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-xs);
+    font-weight: 600;
+  }
+
+  .highlight span {
+    color: var(--color-text-light);
+    font-size: 0.875rem;
+  }
+
+  .welcome-image {
+    position: relative;
+  }
+
+  .welcome-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .features-section {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-2xl);
+    color: var(--color-primary);
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+  }
+
+  .feature-card {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(139, 69, 19, 0.1);
+  }
+
+  .feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-accent);
+  }
+
+  .feature-icon {
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .feature-icon img {
+    filter: sepia(1) saturate(2) hue-rotate(30deg);
+  }
+
+  .feature-card h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.5rem;
+  }
+
+  .feature-card p {
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-text-light);
+  }
+
+  .feature-link {
+    color: var(--color-wine);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+    padding: var(--spacing-xs) 0;
+  }
+
+  .feature-link:hover {
+    border-color: var(--color-wine);
+    color: var(--color-primary);
+  }
+
+  .cycling-section {
+    padding: var(--spacing-2xl) 0;
+    background: var(--color-cream);
+  }
+
+  .cycling-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+    align-items: center;
+  }
+
+  .cycling-text h3 {
+    color: var(--color-primary);
+    font-size: 2rem;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .cycling-text p {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .cycling-features {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+
+  .cycling-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    background: white;
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .feature-icon-small {
+    color: var(--color-accent);
+    flex-shrink: 0;
+    margin-top: var(--spacing-xs);
+  }
+
+  .cycling-feature strong {
+    color: var(--color-wine);
+    display: block;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .cycling-feature p {
+    color: var(--color-text-light);
+    margin: 0;
+    font-size: 0.875rem;
+  }
+
+  .cycling-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .booking-section {
+    background: var(--color-primary);
+    color: white;
+    padding: var(--spacing-2xl) 0;
+    text-align: center;
+  }
+
+  .booking-content h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .booking-content p {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-xl);
+    color: var(--color-cream);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Calendar Widget Section */
+  .calendar-widget-section {
+    padding: var(--spacing-xl) 0;
+    background: white;
+    border-bottom: 1px solid rgba(139, 69, 19, 0.1);
+  }
+
+  .calendar-widget-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .calendar-widget-content h2 {
+    color: var(--color-primary);
+    font-size: 2rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .calendar-widget-content p {
+    color: var(--color-text-light);
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .calendar-container {
+    background: var(--color-cream);
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .calendarWidget {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .calendar-help {
+    background: var(--color-cream);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .calendar-help p {
+    color: var(--color-primary);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    font-size: 1.125rem;
+  }
+
+  .calendar-help ol {
+    color: var(--color-text-light);
+    padding-left: var(--spacing-lg);
+  }
+
+  .calendar-help li {
+    margin-bottom: var(--spacing-sm);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* Booking Widget Styles */
+  .booking-widget-container {
+    background: white;
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-md);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .booking-iframe {
+    min-height: 600px;
+    width: 100%;
+  }
+
+  .alternative-platforms h3 {
+    color: var(--color-accent);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .booking-platforms {
+    display: flex;
+    gap: var(--spacing-lg);
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .platform-btn {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-lg) var(--spacing-xl);
+    border-radius: var(--border-radius-lg);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    min-width: 200px;
+    justify-content: center;
+    font-size: 1.125rem;
+    box-shadow: var(--shadow-md);
+    position: relative;
+  }
+
+  .platform-btn.featured {
+    background: var(--color-accent);
+    color: var(--color-text);
+    border: 3px solid var(--color-accent);
+  }
+
+  .platform-btn.featured::before {
+    content: 'Empfohlen';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-nature);
+    color: white;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .platform-btn.phone {
+    background: var(--color-nature);
+    color: white;
+  }
+
+  .platform-icon {
+    font-size: 1.5em;
+  }
+
+  .platform-btn small {
+    font-size: 0.875rem;
+    opacity: 0.9;
+    font-weight: 400;
+  }
+
+  .platform-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+    text-decoration: none;
+  }
+
+  .alternative-platforms {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .alternative-platforms p {
+    color: var(--color-cream);
+    font-size: 1rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .alt-platforms {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .platform-btn.airbnb {
+    background: #FF5A5F;
+    color: white;
+    min-width: 150px;
+  }
+
+  .platform-btn.booking {
+    background: #003580;
+    color: white;
+    min-width: 150px;
+  }
+
+  .booking-info {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-xl);
+    flex-wrap: wrap;
+  }
+
+  .info-item {
+    color: var(--color-cream);
+    font-size: 1rem;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+  }
+
+  .info-item strong {
+    color: white;
+  }
+
+  .testimonials-section {
+    padding: var(--spacing-2xl) 0;
+    background: var(--color-cream);
+  }
+
+  .testimonials-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-2xl);
+    color: var(--color-primary);
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-xl);
+  }
+
+  .testimonial-card {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s ease;
+  }
+
+  .testimonial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .stars {
+    color: var(--color-accent);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .testimonial-card blockquote {
+    color: var(--color-text-light);
+    font-style: italic;
+    margin-bottom: var(--spacing-lg);
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+
+  .testimonial-card cite {
+    display: block;
+    font-style: normal;
+  }
+
+  .testimonial-card cite strong {
+    color: var(--color-wine);
+    font-weight: 600;
+    display: block;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .testimonial-card cite span {
+    color: var(--color-text-light);
+    font-size: 0.875rem;
+  }
+
+  /* Booking Widget Styles */
+  /* Booking widget styles are now handled in the BookingWidget component */
+
+  /* Hide Powered by Smoobu text */
+  .calendarWidget a[href*="smoobu"],
+  .calendarWidget .powered-by,
+  .calendarWidget [class*="powered"],
+  .calendarWidget [id*="powered"] {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  /* Hide any text containing "Powered by" */
+  .calendarWidget *:contains("Powered by") {
+    display: none !important;
+  }
+
+  /* Additional selectors to catch Smoobu branding */
+  .calendarWidget .smoobu-branding,
+  .calendarWidget .smoobu-link,
+  .calendarWidget [href*="smoobu.com"] {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  @media (max-width: 768px) {
+    .welcome-content {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-xl);
+    }
+
+    .welcome-text {
+      order: 2;
+    }
+
+    .welcome-image {
+      order: 1;
+    }
+
+    .house-highlights {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cycling-content {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-xl);
+    }
+
+    .cycling-text {
+      order: 2;
+    }
+
+    .cycling-image {
+      order: 1;
+    }
+
+    .section-title {
+      font-size: 2rem;
+    }
+
+    .booking-content h2 {
+      font-size: 2rem;
+    }
+
+    .booking-platforms {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .alt-platforms {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .booking-info {
+      flex-direction: column;
+      gap: var(--spacing-sm);
+    }
+
+    .testimonials-section h2 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .house-highlights {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

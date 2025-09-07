@@ -1,0 +1,801 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Das Ferienhaus - Gina's Landhaus | Ausstattung & Räume"
+  description="Entdecken Sie unser komplettes Ferienhaus mit 2 Schlafzimmern, Schlafcouch, voll ausgestatteter Küche und gemütlichen Wohnbereichen. Perfekt für Gruppen bis 6 Personen."
+  ogImage="/images/04-ginas-landhaus.webp"
+>
+  <Header />
+
+  <main class="house-page">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Das Ferienhaus</h1>
+        <p>Ihr komplettes Zuhause auf Zeit - mit allem Komfort für bis zu 6 Personen</p>
+      </div>
+    </section>
+
+    <section class="house-overview">
+      <div class="container">
+        <div class="overview-content">
+          <div class="overview-text">
+            <h2>Willkommen in Ihrem Ferienhaus</h2>
+            <p>
+              Gina's Landhaus ist ein liebevoll restauriertes Ferienhaus, das Sie 
+              komplett für sich mieten können. Auf 120 m² Wohnfläche finden bis zu 
+              6 Personen komfortabel Platz. Das Haus verbindet traditionellen Charme 
+              mit modernem Komfort und ist auch für Ihre vierbeinigen Begleiter geeignet.
+            </p>
+            <div class="house-stats">
+              <div class="stat">
+                <span class="stat-number">120m²</span>
+                <span class="stat-label">Wohnfläche</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">2+1</span>
+                <span class="stat-label">Schlafzimmer + Couch</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">6</span>
+                <span class="stat-label">Personen</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">2</span>
+                <span class="stat-label">Badezimmer</span>
+              </div>
+            </div>
+            
+            <div class="pet-friendly-notice">
+              <div class="pet-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M4.5 13.5C3.1 13.5 2 14.6 2 16s1.1 2.5 2.5 2.5S7 17.4 7 16s-1.1-2.5-2.5-2.5zM19.5 13.5c-1.4 0-2.5 1.1-2.5 2.5s1.1 2.5 2.5 2.5S22 17.4 22 16s-1.1-2.5-2.5-2.5zM12 11c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM7 11c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM17 11c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+                </svg>
+              </div>
+              <div class="pet-text">
+                <strong>Haustiere willkommen!</strong>
+                <p>Ihre vierbeinigen Familienmitglieder sind bei uns herzlich willkommen. Bitte bei der Buchung angeben.</p>
+              </div>
+            </div>
+          </div>
+          <div class="overview-image">
+            <img 
+              src="/images/15-wohnzimmer-blick-terrasse.webp" 
+              alt="Wohnbereich Gina's Landhaus"
+              loading="lazy"
+              width="600"
+              height="400"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rooms-section">
+      <div class="container">
+        <h2>Räume & Ausstattung</h2>
+        <div class="rooms-grid">
+          <div class="room-card">
+            <img 
+              src="/images/11-schlafzimmer-bett.webp" 
+              alt="Hauptschlafzimmer"
+              loading="lazy"
+              width="400"
+              height="300"
+            />
+            <div class="room-content">
+              <h3>Hauptschlafzimmer</h3>
+              <p>Geräumiges Schlafzimmer mit Doppelbett, großem Kleiderschrank und ruhiger Atmosphäre für 2 Personen.</p>
+              <ul class="room-features">
+                <li>Doppelbett 180x200cm</li>
+                <li>Großer Kleiderschrank</li>
+                <li>Ruhige Lage</li>
+                <li>Verdunkelungsvorhänge</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="room-card">
+            <img 
+              src="/images/17-schlafzimmer-2-eingang.webp" 
+              alt="Zweites Schlafzimmer"
+              loading="lazy"
+              width="400"
+              height="300"
+            />
+            <div class="room-content">
+              <h3>Zweites Schlafzimmer</h3>
+              <p>Gemütliches Schlafzimmer mit traditioneller Einrichtung im Landhausstil für 2 Personen.</p>
+              <ul class="room-features">
+                <li>Doppelbett 160x200cm</li>
+                <li>Nachttische</li>
+                <li>Kommode</li>
+                <li>Leselampen</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="room-card">
+            <img 
+              src="/images/13-wohnzimmer-schlafcouch.webp" 
+              alt="Wohnzimmer mit Schlafcouch"
+              loading="lazy"
+              width="400"
+              height="300"
+            />
+            <div class="room-content">
+              <h3>Wohnzimmer mit Schlafcouch</h3>
+              <p>Gemütlicher Wohnbereich mit ausziehbarer Schlafcouch für 2 zusätzliche Gäste.</p>
+              <ul class="room-features">
+                <li>Ausziehbare Schlafcouch für 2 Personen</li>
+                <li>Fernseher</li>
+                <li>Sitzgruppe</li>
+                <li>Zugang zur Terrasse</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="room-card">
+            <img 
+              src="/images/16-terrasse.webp" 
+              alt="Terrasse"
+              loading="lazy"
+              width="400"
+              height="300"
+            />
+            <div class="room-content">
+              <h3>Terrasse & Garten</h3>
+              <p>Private Terrasse mit Gartenmöbeln und Zugang zum Garten - perfekt zum Entspannen und für Ihre Haustiere.</p>
+              <ul class="room-features">
+                <li>Private Terrasse</li>
+                <li>Gartenmöbel</li>
+                <li>Grillmöglichkeit</li>
+                <li>Eingezäunter Bereich für Hunde</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="room-card">
+            <img 
+              src="/images/25-kueche.webp" 
+              alt="Küche"
+              loading="lazy"
+              width="400"
+              height="300"
+            />
+            <div class="room-content">
+              <h3>Voll ausgestattete Küche</h3>
+              <p>Moderne Küche mit allem, was Sie zum Kochen und Genießen brauchen.</p>
+              <ul class="room-features">
+                <li>Herd & Backofen</li>
+                <li>Kühlschrank mit Gefrierfach</li>
+                <li>Spülmaschine</li>
+                <li>Kaffeemaschine & Wasserkocher</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="room-card">
+            <img 
+              src="/images/23-badezimmer.webp" 
+              alt="Badezimmer"
+              loading="lazy"
+              width="400"
+              height="300"
+            />
+            <div class="room-content">
+              <h3>Badezimmer</h3>
+              <p>Modernes Badezimmer mit Badewanne und separatem Gäste-WC für maximalen Komfort.</p>
+              <ul class="room-features">
+                <li>Badewanne & Dusche</li>
+                <li>Waschbecken</li>
+                <li>Separates Gäste-WC</li>
+                <li>Handtücher inklusive</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="amenities-section">
+      <div class="container">
+        <h2>Ausstattung & Services</h2>
+        <div class="amenities-grid">
+          <div class="amenity-category">
+            <div class="amenity-icon">
+              <img src="/images/icon-wine_drink.png" alt="Küche Icon" width="48" height="48" />
+            </div>
+            <h3>Küche & Essen</h3>
+            <ul>
+              <li>Voll ausgestattete Küche</li>
+              <li>Geschirr für 6 Personen</li>
+              <li>Kaffeemaschine & Wasserkocher</li>
+              <li>Toaster & Mikrowelle</li>
+              <li>Esstisch für 6 Personen</li>
+              <li>Grillmöglichkeit im Garten</li>
+            </ul>
+          </div>
+
+          <div class="amenity-category">
+            <div class="amenity-icon">
+              <img src="/images/icon-relax.png" alt="Komfort Icon" width="48" height="48" />
+            </div>
+            <h3>Komfort & Technik</h3>
+            <ul>
+              <li>Kostenloses WLAN</li>
+              <li>TV mit Kabelanschluss</li>
+              <li>Waschmaschine</li>
+              <li>Bügeleisen & Bügelbrett</li>
+              <li>Heizung in allen Räumen</li>
+              <li>Bettwäsche & Handtücher</li>
+            </ul>
+          </div>
+
+          <div class="amenity-category">
+            <div class="amenity-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M4.5 13.5C3.1 13.5 2 14.6 2 16s1.1 2.5 2.5 2.5S7 17.4 7 16s-1.1-2.5-2.5-2.5zM19.5 13.5c-1.4 0-2.5 1.1-2.5 2.5s1.1 2.5 2.5 2.5S22 17.4 22 16s-1.1-2.5-2.5-2.5zM12 11c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM7 11c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM17 11c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+              </svg>
+            </div>
+            <h3>Haustierfreundlich</h3>
+            <ul>
+              <li>Haustiere herzlich willkommen</li>
+              <li>Eingezäunter Gartenbereich</li>
+              <li>Näpfe und Decken verfügbar</li>
+              <li>Tierarzt in der Nähe</li>
+              <li>Hundefreundliche Wanderwege</li>
+              <li>Keine zusätzlichen Gebühren</li>
+            </ul>
+          </div>
+
+          <div class="amenity-category">
+            <div class="amenity-icon">
+              <img src="/images/icon-running_sport.png" alt="Fahrrad Icon" width="48" height="48" />
+            </div>
+            <h3>Für Radfahrer</h3>
+            <ul>
+              <li>Sichere Fahrradstellplätze</li>
+              <li>Trockenraum für Ausrüstung</li>
+              <li>Werkzeug für Reparaturen</li>
+              <li>Kartenmaterial der Region</li>
+              <li>Routenempfehlungen</li>
+              <li>Waschgelegenheit für Räder</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-priority-section">
+      <div class="container">
+        <h2>Jetzt direkt buchen</h2>
+        <div class="booking-priority-content">
+          <div class="direct-booking-card featured">
+            <div class="booking-badge">Empfohlen</div>
+            <h3>Direkte Buchung</h3>
+            <div class="booking-benefits">
+              <ul>
+                <li>Beste Preise - keine Provisionen</li>
+                <li>Persönliche Beratung</li>
+                <li>Flexible Stornierungsbedingungen</li>
+                <li>Individuelle Wünsche möglich</li>
+                <li>Direkter Kontakt zu den Gastgebern</li>
+                <li>Kostenlose Haustier-Mitnahme</li>
+              </ul>
+            </div>
+            <div class="contact-options">
+              <a href="tel:+436643223369" class="btn btn-primary">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                </svg>
+                Jetzt anrufen
+              </a>
+              <a href="/kontakt" class="btn btn-secondary">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                </svg>
+                Anfrage senden
+              </a>
+            </div>
+          </div>
+          
+          <div class="alternative-bookings">
+            <h4>Alternative Buchungsplattformen</h4>
+            <p>Sie können auch über folgende Plattformen buchen (höhere Preise durch Provisionen):</p>
+            <div class="platform-links">
+              <a href="#" class="platform-link airbnb">
+                <span>Airbnb</span>
+                <small>+15% Provision</small>
+              </a>
+              <a href="#" class="platform-link booking">
+                <span>Booking.com</span>
+                <small>+18% Provision</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="container">
+        <h2>Impressionen aus dem Haus</h2>
+        <div class="gallery-grid">
+          <img src="/images/08-eingang-haus.webp" alt="Eingang zum Haus" loading="lazy" />
+          <img src="/images/09-Vorzimmer.webp" alt="Vorzimmer" loading="lazy" />
+          <img src="/images/14-wohnzimmer-fernseher.webp" alt="Wohnzimmer mit Fernseher" loading="lazy" />
+          <img src="/images/26-kueche-esstisch.webp" alt="Küche mit Esstisch" loading="lazy" />
+          <img src="/images/06-hof-fahrraeder-abstellplatz.webp" alt="Fahrradstellplatz" loading="lazy" />
+          <img src="/images/07-garten-sitzplatz.webp" alt="Garten Sitzplatz" loading="lazy" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .house-page {
+    margin-top: 80px;
+  }
+
+  .page-hero {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-wine) 100%);
+    color: white;
+    padding: var(--spacing-2xl) 0;
+    text-align: center;
+  }
+
+  .page-hero h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .page-hero p {
+    font-size: 1.25rem;
+    color: var(--color-cream);
+  }
+
+  .house-overview {
+    padding: var(--spacing-2xl) 0;
+    background: var(--color-cream);
+  }
+
+  .overview-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+    align-items: center;
+  }
+
+  .overview-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-primary);
+  }
+
+  .house-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-md);
+    margin: var(--spacing-xl) 0;
+  }
+
+  .stat {
+    background: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-wine);
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .stat-label {
+    color: var(--color-text-light);
+    font-size: 0.875rem;
+  }
+
+  .pet-friendly-notice {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    background: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    border-left: 4px solid var(--color-nature);
+    margin-top: var(--spacing-lg);
+  }
+
+  .pet-icon {
+    color: var(--color-nature);
+    flex-shrink: 0;
+  }
+
+  .pet-text strong {
+    color: var(--color-nature);
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.125rem;
+  }
+
+  .pet-text p {
+    color: var(--color-text-light);
+    margin: 0;
+    font-size: 0.875rem;
+  }
+
+  .overview-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .rooms-section {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .rooms-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-2xl);
+    color: var(--color-primary);
+  }
+
+  .rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-xl);
+  }
+
+  .room-card {
+    background: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease;
+  }
+
+  .room-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .room-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .room-content {
+    padding: var(--spacing-lg);
+  }
+
+  .room-content h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .room-content p {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .room-features {
+    list-style: none;
+    padding: 0;
+  }
+
+  .room-features li {
+    padding: var(--spacing-xs) 0;
+    color: var(--color-text-light);
+    position: relative;
+    padding-left: var(--spacing-lg);
+  }
+
+  .room-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-nature);
+    font-weight: bold;
+  }
+
+  .amenities-section {
+    background: var(--color-cream);
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .amenities-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-2xl);
+    color: var(--color-primary);
+  }
+
+  .amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-xl);
+  }
+
+  .amenity-category {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+  }
+
+  .amenity-icon {
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .amenity-icon img {
+    filter: sepia(1) saturate(2) hue-rotate(30deg);
+  }
+
+  .amenity-icon svg {
+    color: var(--color-nature);
+  }
+
+  .amenity-category h3 {
+    color: var(--color-wine);
+    margin-bottom: var(--spacing-lg);
+    font-size: 1.25rem;
+  }
+
+  .amenity-category ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+
+  .amenity-category li {
+    padding: var(--spacing-xs) 0;
+    color: var(--color-text-light);
+    position: relative;
+    padding-left: var(--spacing-lg);
+  }
+
+  .amenity-category li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-nature);
+    font-weight: bold;
+  }
+
+  .booking-priority-section {
+    padding: var(--spacing-2xl) 0;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-wine) 100%);
+    color: white;
+  }
+
+  .booking-priority-section h2 {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .booking-priority-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .direct-booking-card {
+    background: white;
+    color: var(--color-text);
+    padding: var(--spacing-2xl);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .booking-badge {
+    position: absolute;
+    top: -10px;
+    left: var(--spacing-lg);
+    background: var(--color-accent);
+    color: var(--color-text);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  .direct-booking-card h3 {
+    color: var(--color-primary);
+    font-size: 2rem;
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+  }
+
+  .booking-benefits ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .booking-benefits li {
+    padding: var(--spacing-sm) 0;
+    color: var(--color-text-light);
+    position: relative;
+    padding-left: var(--spacing-lg);
+    font-size: 1.125rem;
+  }
+
+  .booking-benefits li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-nature);
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+
+  .contact-options {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contact-options .btn {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    min-width: 180px;
+    justify-content: center;
+  }
+
+  .alternative-bookings {
+    background: rgba(255, 255, 255, 0.1);
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius);
+    text-align: center;
+  }
+
+  .alternative-bookings h4 {
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .alternative-bookings p {
+    color: var(--color-cream);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .platform-links {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .platform-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-md);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    min-width: 120px;
+  }
+
+  .platform-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+  }
+
+  .platform-link span {
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .platform-link small {
+    color: var(--color-cream);
+    font-size: 0.75rem;
+  }
+
+  .gallery-section {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .gallery-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-2xl);
+    color: var(--color-primary);
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+  }
+
+  .gallery-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s ease;
+  }
+
+  .gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-md);
+  }
+
+  @media (max-width: 768px) {
+    .page-hero h1 {
+      font-size: 2rem;
+    }
+
+    .overview-content {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-xl);
+    }
+
+    .overview-text {
+      order: 2;
+    }
+
+    .overview-image {
+      order: 1;
+    }
+
+    .house-stats {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pet-friendly-notice {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .rooms-section h2,
+    .amenities-section h2,
+    .booking-priority-section h2,
+    .gallery-section h2 {
+      font-size: 2rem;
+    }
+
+    .rooms-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .contact-options {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .platform-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>

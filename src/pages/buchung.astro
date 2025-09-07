@@ -1,0 +1,797 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Buchung & Verfügbarkeit - Gina's Landhaus | Ferienhaus mieten"
+  description="Buchen Sie Gina's Landhaus für Ihren Urlaub im Pinkertal. Verfügbarkeit prüfen, Preise einsehen und direkt über uns oder Buchungsplattformen reservieren."
+  ogImage="/images/og-booking.jpg"
+>
+  <Header />
+
+  <main class="booking-page">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Buchung & Verfügbarkeit</h1>
+        <p>Reservieren Sie Ihr komplettes Ferienhaus für unvergessliche Tage</p>
+      </div>
+    </section>
+
+    <section class="booking-options">
+      <div class="container">
+        <h2>Buchungsoptionen</h2>
+        <div class="booking-platforms">
+          <div class="platform-card direct featured">
+            <div class="platform-badge">Beste Preise</div>
+            <div class="platform-logo">
+              <h3>Direkte Buchung</h3>
+            </div>
+            <div class="platform-content">
+              <p>Buchen Sie direkt bei uns und profitieren Sie von den besten Preisen ohne Provisionen und persönlicher Beratung.</p>
+              <ul class="platform-features">
+                <li>Beste Preise - keine Provisionen</li>
+                <li>Persönliche Beratung vor Ort</li>
+                <li>Flexible Stornierungsbedingungen</li>
+                <li>Individuelle Wünsche möglich</li>
+                <li>Haustiere kostenlos</li>
+                <li>Direkter Kontakt zu Gastgebern</li>
+              </ul>
+              <div class="contact-buttons">
+                <a href="tel:+436643223369" class="btn platform-btn">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                  </svg>
+                  Jetzt anrufen
+                </a>
+                <a href="/kontakt" class="btn platform-btn">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                  </svg>
+                  Anfrage senden
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="platform-card airbnb">
+            <div class="platform-logo">
+              <h3>Airbnb</h3>
+            </div>
+            <div class="platform-content">
+              <p>Buchen Sie über Airbnb mit sofortiger Bestätigung. Höhere Preise durch Plattform-Provisionen.</p>
+              <ul class="platform-features">
+                <li>Sofortige Buchungsbestätigung</li>
+                <li>Sichere Zahlungsabwicklung</li>
+                <li>Bewertungen von Gästen</li>
+                <li>24/7 Kundenservice</li>
+              </ul>
+              <div class="price-notice">
+                <strong>+15% höhere Preise</strong>
+                <span>durch Plattform-Provisionen</span>
+              </div>
+              <a href="#" class="btn platform-btn">Auf Airbnb buchen</a>
+            </div>
+          </div>
+
+          <div class="platform-card booking">
+            <div class="platform-logo">
+              <h3>Booking.com</h3>
+            </div>
+            <div class="platform-content">
+              <p>Reservieren Sie über Booking.com. Höhere Preise durch Plattform-Provisionen.</p>
+              <ul class="platform-features">
+                <li>Kostenlose Stornierung</li>
+                <li>Best-Preis-Garantie</li>
+                <li>Keine Buchungsgebühren</li>
+                <li>Weltweiter Service</li>
+              </ul>
+              <div class="price-notice">
+                <strong>+18% höhere Preise</strong>
+                <span>durch Plattform-Provisionen</span>
+              </div>
+              <a href="#" class="btn platform-btn">Auf Booking.com buchen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-info">
+      <div class="container">
+        <h2>Preise & Konditionen</h2>
+        <div class="pricing-content">
+          <div class="pricing-table">
+            <h3>Übernachtungspreise (Direktbuchung)</h3>
+            <div class="price-row">
+              <span class="price-period">Nebensaison (Nov - März)</span>
+              <span class="price-amount">ab 120€ / Nacht</span>
+            </div>
+            <div class="price-row">
+              <span class="price-period">Hauptsaison (Apr - Okt)</span>
+              <span class="price-amount">ab 150€ / Nacht</span>
+            </div>
+            <div class="price-row">
+              <span class="price-period">Feiertage & Events</span>
+              <span class="price-amount">ab 180€ / Nacht</span>
+            </div>
+            <div class="price-note">
+              <p><strong>Preise gelten für das komplette Haus (bis zu 6 Personen)</strong></p>
+              <p>Mindestaufenthalt: 2 Nächte | Längere Aufenthalte: Rabatt auf Anfrage</p>
+              <p><strong>Haustiere:</strong> Kostenlos bei Direktbuchung</p>
+            </div>
+          </div>
+
+          <div class="included-services">
+            <h3>Im Preis enthalten</h3>
+            <ul class="services-list">
+              <li>Komplettes Ferienhaus für bis zu 6 Personen</li>
+              <li>Bettwäsche und Handtücher</li>
+              <li>Endreinigung</li>
+              <li>Kostenloses WLAN</li>
+              <li>Parkplätze vor dem Haus</li>
+              <li>Fahrradstellplätze</li>
+              <li>Garten- und Terrassennutzung</li>
+              <li>Grundausstattung Küche</li>
+              <li>Haustiere (bei Direktbuchung)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-conditions">
+      <div class="container">
+        <h2>Buchungsbedingungen</h2>
+        <div class="conditions-grid">
+          <div class="condition-card">
+            <h3>Check-in & Check-out</h3>
+            <div class="condition-details">
+              <p><strong>Check-in:</strong> ab 15:00 Uhr</p>
+              <p><strong>Check-out:</strong> bis 11:00 Uhr</p>
+              <p><strong>Schlüsselübergabe:</strong> Persönlich oder Schlüsselsafe</p>
+              <p><strong>Früher Check-in:</strong> Nach Absprache möglich</p>
+            </div>
+          </div>
+
+          <div class="condition-card">
+            <h3>Stornierungsbedingungen</h3>
+            <div class="condition-details">
+              <p><strong>Direktbuchung:</strong></p>
+              <p>Bis 30 Tage vorher: Kostenlose Stornierung</p>
+              <p>15-29 Tage vorher: 50% des Buchungspreises</p>
+              <p>Weniger als 14 Tage: 100% des Buchungspreises</p>
+              <p><strong>Plattformen:</strong> Je nach Buchungsplattform</p>
+            </div>
+          </div>
+
+          <div class="condition-card">
+            <h3>Hausregeln</h3>
+            <div class="condition-details">
+              <p><strong>Rauchen:</strong> Nur im Außenbereich erlaubt</p>
+              <p><strong>Haustiere:</strong> Herzlich willkommen (bei Anmeldung)</p>
+              <p><strong>Partys:</strong> Nicht gestattet</p>
+              <p><strong>Nachtruhe:</strong> 22:00 - 7:00 Uhr</p>
+              <p><strong>Maximale Gäste:</strong> 6 Personen</p>
+            </div>
+          </div>
+
+          <div class="condition-card">
+            <h3>Zusatzleistungen</h3>
+            <div class="condition-details">
+              <p><strong>Frühstücksservice:</strong> 15€ / Person</p>
+              <p><strong>Fahrradverleih:</strong> 20€ / Tag</p>
+              <p><strong>Einkaufsservice:</strong> 25€ + Kosten</p>
+              <p><strong>Zusätzliche Reinigung:</strong> 50€</p>
+              <p><strong>Haustiere (Plattformen):</strong> 25€ / Aufenthalt</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Smoobu Booking Widget -->
+    <section class="smoobu-booking-section">
+      <div class="container">
+        <h2>Online Buchung</h2>
+        <p>Buchen Sie hier direkt und sicher Ihren Aufenthalt:</p>
+        
+        <!-- Calendar Widget -->
+        <div class="booking-step">
+          <h3>1. Verfügbarkeit prüfen</h3>
+          <div class="calendar-container">
+            <div id="smoobuApartment2858166de" class="calendarWidget">
+              <div class="calendarContent" 
+                   data-load-calendar-url="https://login.smoobu.com/de/cockpit/widget/single-calendar/2858166" 
+                   data-verification="8be1893a3b799bb8bea84d94f9ce999f65efd27c73412e0782c07b18de396650" 
+                   data-baseUrl="https://login.smoobu.com" 
+                   data-disable-css="false">
+              </div>
+              <script type="text/javascript" src="https://login.smoobu.com/js/Apartment/CalendarWidget.js" defer></script>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Booking Widget -->
+        <div class="booking-step">
+          <h3>2. Buchung abschließen</h3>
+          <div class="booking-widget-container">
+            <div id="apartmentIframeAll" class="booking-iframe">
+              <script type="text/javascript" src="https://login.smoobu.com/js/Settings/BookingToolIframe.js" defer></script>
+              <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                  if (typeof BookingToolIframe !== 'undefined') {
+                    BookingToolIframe.initialize({
+                      "url": "https://login.smoobu.com/de/booking-tool/iframe/1359421", 
+                      "baseUrl": "https://login.smoobu.com", 
+                      "target": "#apartmentIframeAll"
+                    });
+                  }
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+        
+        <div class="booking-help">
+          <h3>Hilfe bei der Buchung</h3>
+          <div class="help-content">
+            <div class="help-item">
+              <h4>📅 Schritt 1: Termine wählen</h4>
+              <p>Klicken Sie im Kalender auf Ihr gewünschtes Anreisedatum und dann auf das Abreisedatum. Mindestaufenthalt: 2 Nächte.</p>
+            </div>
+            <div class="help-item">
+              <h4>📝 Schritt 2: Daten eingeben</h4>
+              <p>Geben Sie Ihre persönlichen Daten und die Anzahl der Gäste in das Buchungsformular ein.</p>
+            </div>
+            <div class="help-item">
+              <h4>💳 Schritt 3: Bezahlen</h4>
+              <p>Wählen Sie Ihre bevorzugte Zahlungsmethode und schließen Sie die Buchung ab.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-booking">
+      <div class="container">
+        <div class="contact-content">
+          <h2>Fragen zur Buchung?</h2>
+          <p>
+            Unser Team steht Ihnen gerne für alle Fragen rund um Ihre Buchung zur Verfügung. 
+            Kontaktieren Sie uns für individuelle Wünsche oder Sonderanfragen.
+          </p>
+          <div class="contact-options">
+            <div class="contact-option">
+              <h4>Telefon</h4>
+              <p><a href="tel:+436643223369">+43 664 322 33 69</a></p>
+              <span>Mo-So: 8:00 - 20:00 Uhr</span>
+            </div>
+            <div class="contact-option">
+              <h4>E-Mail</h4>
+              <p><a href="mailto:office@ginas-landhaus.at">office@ginas-landhaus.at</a></p>
+              <span>Antwort innerhalb 24h</span>
+            </div>
+            <div class="contact-option">
+              <h4>WhatsApp</h4>
+              <p><a href="https://wa.me/436643223369">+43 664 322 33 69</a></p>
+              <span>Schnelle Antworten</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .booking-page {
+    margin-top: 80px;
+  }
+
+  .page-hero {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-wine) 100%);
+    color: white;
+    padding: var(--spacing-2xl) 0;
+    text-align: center;
+  }
+
+  .page-hero h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .page-hero p {
+    font-size: 1.25rem;
+    color: var(--color-cream);
+  }
+
+  .booking-options {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .booking-options h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-2xl);
+    color: var(--color-primary);
+  }
+
+  .booking-platforms {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-xl);
+  }
+
+  .platform-card {
+    background: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease;
+    position: relative;
+  }
+
+  .platform-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .platform-card.featured {
+    border: 3px solid var(--color-accent);
+    transform: scale(1.02);
+  }
+
+  .platform-badge {
+    position: absolute;
+    top: -10px;
+    left: var(--spacing-lg);
+    background: var(--color-nature);
+    color: white;
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    z-index: 2;
+  }
+
+  .platform-logo {
+    padding: var(--spacing-lg);
+    text-align: center;
+    color: white;
+  }
+
+  .platform-card.direct .platform-logo {
+    background: var(--color-nature);
+  }
+
+  .platform-card.airbnb .platform-logo {
+    background: #FF5A5F;
+  }
+
+  .platform-card.booking .platform-logo {
+    background: #003580;
+  }
+
+  .platform-logo h3 {
+    color: white;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .platform-content {
+    padding: var(--spacing-xl);
+  }
+
+  .platform-content p {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .platform-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .platform-features li {
+    padding: var(--spacing-xs) 0;
+    color: var(--color-text-light);
+    position: relative;
+    padding-left: var(--spacing-lg);
+  }
+
+  .platform-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-nature);
+    font-weight: bold;
+  }
+
+  .contact-buttons {
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+  }
+
+  .contact-buttons .btn {
+    flex: 1;
+    min-width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    font-size: 0.875rem;
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .price-notice {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+  }
+
+  .price-notice strong {
+    color: #856404;
+    display: block;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .price-notice span {
+    color: #856404;
+    font-size: 0.875rem;
+  }
+
+  .platform-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pricing-info {
+    background: var(--color-cream);
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .pricing-info h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-2xl);
+    color: var(--color-primary);
+  }
+
+  .pricing-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+  }
+
+  .pricing-table,
+  .included-services {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .pricing-table h3,
+  .included-services h3 {
+    color: var(--color-wine);
+    margin-bottom: var(--spacing-lg);
+    font-size: 1.5rem;
+  }
+
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md) 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .price-row:last-of-type {
+    border-bottom: none;
+  }
+
+  .price-period {
+    color: var(--color-text);
+    font-weight: 500;
+  }
+
+  .price-amount {
+    color: var(--color-wine);
+    font-weight: 700;
+    font-size: 1.125rem;
+  }
+
+  .price-note {
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-lg);
+    border-top: 2px solid var(--color-cream);
+  }
+
+  .price-note p {
+    color: var(--color-text-light);
+    font-size: 0.875rem;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .services-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .services-list li {
+    padding: var(--spacing-xs) 0;
+    color: var(--color-text-light);
+    position: relative;
+    padding-left: var(--spacing-lg);
+  }
+
+  .services-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-nature);
+    font-weight: bold;
+  }
+
+  .booking-conditions {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .booking-conditions h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-2xl);
+    color: var(--color-primary);
+  }
+
+  .conditions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-xl);
+  }
+
+  .condition-card {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    border-left: 4px solid var(--color-accent);
+  }
+
+  .condition-card h3 {
+    color: var(--color-wine);
+    margin-bottom: var(--spacing-lg);
+    font-size: 1.25rem;
+  }
+
+  .condition-details p {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.5;
+  }
+
+  .contact-booking {
+    background: var(--color-primary);
+    color: white;
+    padding: var(--spacing-2xl) 0;
+    text-align: center;
+  }
+
+  .contact-content h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .contact-content p {
+    font-size: 1.125rem;
+    color: var(--color-cream);
+    margin-bottom: var(--spacing-xl);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-xl);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .contact-option {
+    background: rgba(255, 255, 255, 0.1);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+  }
+
+  .contact-option h4 {
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.125rem;
+  }
+
+  .contact-option p {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .contact-option a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .contact-option a:hover {
+    color: var(--color-accent);
+  }
+
+  .contact-option span {
+    color: var(--color-cream);
+    font-size: 0.875rem;
+  }
+
+  /* Smoobu Booking Section */
+  .smoobu-booking-section {
+    padding: var(--spacing-2xl) 0;
+    background: var(--color-cream);
+  }
+
+  .smoobu-booking-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-primary);
+  }
+
+  .smoobu-booking-section > .container > p {
+    text-align: center;
+    font-size: 1.25rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-2xl);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .booking-step {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .booking-step h3 {
+    color: var(--color-wine);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+  }
+
+  .calendar-container {
+    background: var(--color-cream);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .booking-widget-container {
+    background: var(--color-cream);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+  }
+
+  .booking-iframe {
+    min-height: 600px;
+    width: 100%;
+  }
+
+  .booking-help {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+    border-left: 4px solid var(--color-accent);
+  }
+
+  .booking-help h3 {
+    color: var(--color-primary);
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+  }
+
+  .help-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+  }
+
+  .help-item {
+    text-align: center;
+  }
+
+  .help-item h4 {
+    color: var(--color-wine);
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .help-item p {
+    color: var(--color-text-light);
+    font-size: 0.875rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* Hide Powered by Smoobu text */
+  .calendarWidget a[href*="smoobu"],
+  .calendarWidget .powered-by,
+  .calendarWidget [class*="powered"],
+  .calendarWidget [id*="powered"] {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  /* Hide any text containing "Powered by" */
+  .calendarWidget *:contains("Powered by") {
+    display: none !important;
+  }
+
+  /* Additional selectors to catch Smoobu branding */
+  .calendarWidget .smoobu-branding,
+  .calendarWidget .smoobu-link,
+  .calendarWidget [href*="smoobu.com"] {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  .booking-iframe {
+    min-height: 600px;
+    width: 100%;
+  }
+
+  /* Hide Powered by Smoobu in booking iframe */
+  .booking-iframe a[href*="smoobu"],
+  .booking-iframe .powered-by,
+  .booking-iframe [class*="powered"],
+  .booking-iframe [id*="powered"] {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  @media (max-width: 768px) {
+    .page-hero h1 {
+      font-size: 2rem;
+    }
+
+    .booking-options h2,
+    .pricing-info h2,
+    .booking-conditions h2,
+    .contact-content h2 {
+      font-size: 2rem;
+    }
+
+    .pricing-content {
+      grid-template-columns: 1fr;
+    }
+
+    .contact-buttons {
+      flex-direction: column;
+    }
+
+    .contact-content h2 {
+      font-size: 2rem;
+    }
+  }
+</style>

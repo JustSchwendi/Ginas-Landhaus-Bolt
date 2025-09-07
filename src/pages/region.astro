@@ -1,0 +1,570 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Die Region entdecken - Gina's Landhaus | Weinland & Radtouren"
+  description="Entdecken Sie das wunderschöne Weinland rund um Gina's Landhaus. Radtouren, Weinverkostungen, Sehenswürdigkeiten und Ausflugstipps für Ihren Urlaub."
+  ogImage="/images/Natur.jpg"
+>
+  <Header />
+
+  <main class="region-page">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Die Region entdecken</h1>
+        <p>Weinland, Radwege und unvergessliche Erlebnisse vor Ihrer Haustür</p>
+      </div>
+    </section>
+
+    <section class="region-intro">
+      <div class="container">
+        <div class="intro-content">
+          <div class="intro-text">
+            <h2>Willkommen im Remstal</h2>
+            <p>
+              Gina's Landhaus liegt im Herzen des Remstals, einer der schönsten Weinregionen 
+              Baden-Württembergs. Hier, wo sanfte Hügel von Weinreben bedeckt sind und 
+              traditionelle Winzerdörfer zum Verweilen einladen, finden Sie die 
+              perfekte Mischung aus Natur, Kultur und Genuss.
+            </p>
+            <p>
+              Ob Sie die Region mit dem Fahrrad erkunden, lokale Weingüter besuchen 
+              oder einfach die Ruhe der Landschaft genießen möchten - hier gibt es 
+              für jeden etwas zu entdecken.
+            </p>
+          </div>
+          <div class="intro-image">
+            <img 
+              src="/images/Natur.jpg" 
+              alt="Weinberge in der Region"
+              loading="lazy"
+              width="600"
+              height="400"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="activities-section">
+      <div class="container">
+        <h2>Aktivitäten & Erlebnisse</h2>
+        <div class="activities-grid">
+          <div class="activity-card">
+            <div class="activity-image">
+              <img src="/images/Sport.jpg" alt="Radtouren" width="300" height="200" />
+            </div>
+            <div class="activity-content">
+              <div class="activity-icon">
+                <img src="/images/icon-running_sport.png" alt="Sport Icon" width="48" height="48" />
+              </div>
+              <h3>Radtouren</h3>
+              <p>
+                Entdecken Sie die Region auf bestens ausgeschilderten Radwegen. 
+                Von gemütlichen Familientouren bis hin zu anspruchsvollen Strecken 
+                für Sportler ist alles dabei.
+              </p>
+              <ul class="activity-features">
+                <li>Remstal-Radweg (25 km)</li>
+                <li>Panorama-Route (40 km)</li>
+                <li>Familienrunde (12 km)</li>
+                <li>E-Bike Verleih vor Ort</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="activity-card">
+            <div class="activity-image">
+              <img src="/images/Uhudler.jpg" alt="Weinverkostung" width="300" height="200" />
+            </div>
+            <div class="activity-content">
+              <div class="activity-icon">
+                <img src="/images/icon-wine_drink.png" alt="Wein Icon" width="48" height="48" />
+              </div>
+              <h3>Weinverkostungen</h3>
+              <p>
+                Besuchen Sie traditionelle Weingüter und lernen Sie die Kunst des 
+                Weinmachens kennen. Verkosten Sie prämierte Weine direkt beim Winzer.
+              </p>
+              <ul class="activity-features">
+                <li>Weingut Kessler (2 km)</li>
+                <li>Kellerei Waiblinger (5 km)</li>
+                <li>Winzergenossenschaft (3 km)</li>
+                <li>Weinwanderungen</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="activity-card">
+            <div class="activity-image">
+              <img src="/images/Kultur.jpg" alt="Kultur" width="300" height="200" />
+            </div>
+            <div class="activity-content">
+              <div class="activity-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+              </div>
+              <h3>Kultur & Sehenswürdigkeiten</h3>
+              <p>
+                Entdecken Sie historische Städtchen, Burgruinen und kulturelle 
+                Highlights in der Umgebung. Jeder Ort erzählt seine eigene Geschichte.
+              </p>
+              <ul class="activity-features">
+                <li>Burg Yburg (15 km)</li>
+                <li>Altstadt Schorndorf (10 km)</li>
+                <li>Kloster Lorch (12 km)</li>
+                <li>Heimatmuseum Weinstadt (3 km)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="activity-card">
+            <div class="activity-image">
+              <img src="/images/Wellness.jpg" alt="Entspannung" width="300" height="200" />
+            </div>
+            <div class="activity-content">
+              <div class="activity-icon">
+                <img src="/images/icon-relax.png" alt="Entspannung Icon" width="48" height="48" />
+              </div>
+              <h3>Entspannung & Wellness</h3>
+              <p>
+                Genießen Sie die Ruhe der Natur bei Spaziergängen durch die Weinberge 
+                oder entspannen Sie in nahegelegenen Wellness-Einrichtungen.
+              </p>
+              <ul class="activity-features">
+                <li>Weinberg-Spazierwege</li>
+                <li>Thermalbad Cannstatt (20 km)</li>
+                <li>Massage & Wellness</li>
+                <li>Ruhige Gartenterrasse</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="routes-section">
+      <div class="container">
+        <h2>Empfohlene Radtouren</h2>
+        <div class="routes-grid">
+          <div class="route-card">
+            <div class="route-header">
+              <h3>Remstal-Rundtour</h3>
+              <div class="route-stats">
+                <span class="distance">25 km</span>
+                <span class="difficulty easy">Leicht</span>
+                <span class="duration">2-3 Std.</span>
+              </div>
+            </div>
+            <p>
+              Eine gemütliche Tour durch die schönsten Weinberge des Remstals. 
+              Perfekt für Familien und Genussradler mit mehreren Einkehrmöglichkeiten.
+            </p>
+            <div class="route-highlights">
+              <h4>Highlights:</h4>
+              <ul>
+                <li>3 Weingüter mit Verkostung</li>
+                <li>Panoramablick vom Weinberg</li>
+                <li>Traditionelle Besenwirtschaft</li>
+                <li>Historisches Winzerdorf</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="route-card">
+            <div class="route-header">
+              <h3>Stuttgart-Panorama-Tour</h3>
+              <div class="route-stats">
+                <span class="distance">40 km</span>
+                <span class="difficulty medium">Mittel</span>
+                <span class="duration">3-4 Std.</span>
+              </div>
+            </div>
+            <p>
+              Anspruchsvolle Tour mit herrlichen Aussichten auf Stuttgart und das Remstal. 
+              Belohnt werden Sie mit spektakulären Panoramablicken.
+            </p>
+            <div class="route-highlights">
+              <h4>Highlights:</h4>
+              <ul>
+                <li>Aussichtsturm Kernen</li>
+                <li>Blick auf Stuttgart</li>
+                <li>Waldpassage mit Wildgehege</li>
+                <li>Einkehr im Berggasthof</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="route-card">
+            <div class="route-header">
+              <h3>Familien-Runde Weinstadt</h3>
+              <div class="route-stats">
+                <span class="distance">12 km</span>
+                <span class="difficulty easy">Leicht</span>
+                <span class="duration">1-2 Std.</span>
+              </div>
+            </div>
+            <p>
+              Kurze, flache Strecke ideal für Kinder und Anfänger. 
+              Führt durch ruhige Nebenstraßen und sichere Radwege.
+            </p>
+            <div class="route-highlights">
+              <h4>Highlights:</h4>
+              <ul>
+                <li>Spielplatz am Wegesrand</li>
+                <li>Streichelzoo (5 km)</li>
+                <li>Picknickplatz am Bach</li>
+                <li>Eisdiele im Dorf</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="local-tips">
+      <div class="container">
+        <h2>Insider-Tipps</h2>
+        <div class="tips-grid">
+          <div class="tip-card">
+            <h3>Beste Reisezeit</h3>
+            <p>
+              <strong>April bis Oktober:</strong> Ideale Zeit für Radtouren und Weinverkostungen. 
+              Die Weinlese im September/Oktober ist besonders reizvoll.
+            </p>
+          </div>
+          <div class="tip-card">
+            <h3>Lokale Spezialitäten</h3>
+            <p>
+              Probieren Sie unbedingt den regionalen Riesling, hausgemachte Maultaschen 
+              und den berühmten Zwiebelkuchen zur Weinlese.
+            </p>
+          </div>
+          <div class="tip-card">
+            <h3>Märkte & Events</h3>
+            <p>
+              <strong>Samstags:</strong> Wochenmarkt in Schorndorf<br>
+              <strong>August:</strong> Weinfest Weinstadt<br>
+              <strong>September:</strong> Weinlese-Festival
+            </p>
+          </div>
+          <div class="tip-card">
+            <h3>Praktische Infos</h3>
+            <p>
+              E-Bike Verleih: Radstation Weinstadt<br>
+              Reparaturservice: Bike-Shop Müller<br>
+              Touristinfo: Marktplatz Weinstadt
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .region-page {
+    margin-top: 80px;
+  }
+
+  .page-hero {
+    background: linear-gradient(135deg, var(--color-nature) 0%, var(--color-primary) 100%);
+    color: white;
+    padding: var(--spacing-2xl) 0;
+    text-align: center;
+  }
+
+  .page-hero h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .page-hero p {
+    font-size: 1.25rem;
+    color: var(--color-cream);
+  }
+
+  .region-intro {
+    padding: var(--spacing-2xl) 0;
+    background: var(--color-cream);
+  }
+
+  .intro-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+    align-items: center;
+  }
+
+  .intro-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-primary);
+  }
+
+  .intro-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .activities-section {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .activities-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-2xl);
+    color: var(--color-primary);
+  }
+
+  .activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-xl);
+  }
+
+  .activity-card {
+    background: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease;
+  }
+
+  .activity-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .activity-image {
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .activity-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .activity-content {
+    padding: var(--spacing-xl);
+  }
+
+  .activity-icon {
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+  }
+
+  .activity-icon img {
+    filter: sepia(1) saturate(2) hue-rotate(30deg);
+  }
+
+  .activity-icon svg {
+    color: var(--color-accent);
+  }
+
+  .activity-card h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .activity-card p {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .activity-features {
+    list-style: none;
+    padding: 0;
+  }
+
+  .activity-features li {
+    padding: var(--spacing-xs) 0;
+    color: var(--color-text-light);
+    position: relative;
+    padding-left: var(--spacing-lg);
+  }
+
+  .activity-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-nature);
+    font-weight: bold;
+  }
+
+  .routes-section {
+    background: var(--color-cream);
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .routes-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-2xl);
+    color: var(--color-primary);
+  }
+
+  .routes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-xl);
+  }
+
+  .route-card {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+  }
+
+  .route-header {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .route-header h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .route-stats {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+  }
+
+  .route-stats span {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  .distance {
+    background: var(--color-accent);
+    color: var(--color-text);
+  }
+
+  .difficulty.easy {
+    background: var(--color-nature);
+    color: white;
+  }
+
+  .difficulty.medium {
+    background: #f59e0b;
+    color: white;
+  }
+
+  .duration {
+    background: var(--color-cream);
+    color: var(--color-text);
+  }
+
+  .route-card p {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .route-highlights h4 {
+    color: var(--color-wine);
+    margin-bottom: var(--spacing-md);
+    font-size: 1rem;
+  }
+
+  .route-highlights ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .route-highlights li {
+    padding: var(--spacing-xs) 0;
+    color: var(--color-text-light);
+    position: relative;
+    padding-left: var(--spacing-lg);
+  }
+
+  .route-highlights li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--color-wine);
+    font-weight: bold;
+  }
+
+  .local-tips {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .local-tips h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-2xl);
+    color: var(--color-primary);
+  }
+
+  .tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+  }
+
+  .tip-card {
+    background: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    border-left: 4px solid var(--color-accent);
+  }
+
+  .tip-card h3 {
+    color: var(--color-wine);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.125rem;
+  }
+
+  .tip-card p {
+    color: var(--color-text-light);
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .page-hero h1 {
+      font-size: 2rem;
+    }
+
+    .intro-content {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-xl);
+    }
+
+    .intro-text {
+      order: 2;
+    }
+
+    .intro-image {
+      order: 1;
+    }
+
+    .activities-section h2,
+    .routes-section h2,
+    .local-tips h2 {
+      font-size: 2rem;
+    }
+
+    .route-stats {
+      justify-content: center;
+    }
+  }
+</style>

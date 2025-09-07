@@ -1,0 +1,485 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Über uns - Gina's Landhaus | Familie & Geschichte"
+  description="Lernen Sie die Familie hinter Gina's Landhaus kennen. Unsere Geschichte, Philosophie und Leidenschaft für Gastfreundschaft im Pinkertal."
+  ogImage="/images/og-about.jpg"
+>
+  <Header />
+
+  <main class="about-page">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Über uns</h1>
+        <p>Die Familie hinter Gina's Landhaus und unsere Geschichte</p>
+      </div>
+    </section>
+
+    <section class="family-story">
+      <div class="container">
+        <div class="story-content">
+          <div class="story-text">
+            <h2>Unsere Geschichte</h2>
+            <p>
+              Gina's Landhaus ist mehr als nur ein Ferienhaus - es ist unser Familientraum, 
+              der 2018 Wirklichkeit wurde. Nach Jahren der liebevollen Restaurierung haben 
+              wir aus dem traditionellen Haus im Pinkertal ein gemütliches Feriendomizil geschaffen, 
+              das Tradition und Moderne perfekt verbindet.
+            </p>
+            <p>
+              Benannt nach unserer Großmutter Gina, die ihr Leben lang in dieser Region 
+              gewohnt und die Liebe zum Burgenland geprägt hat, führen wir ihre Tradition 
+              der Gastfreundschaft fort. Jeder Raum erzählt eine Geschichte und wurde 
+              mit viel Liebe zum Detail eingerichtet.
+            </p>
+            <p>
+              Als Familie, die selbst gerne reist und die Schönheit unserer Heimat 
+              schätzt, wissen wir, was einen perfekten Urlaub ausmacht. Diese 
+              Erfahrung fließt in jeden Aspekt von Gina's Landhaus ein.
+            </p>
+          </div>
+          <div class="story-image">
+            <img 
+              src="/images/04-ginas-landhaus.webp" 
+              alt="Gina's Landhaus"
+              loading="lazy"
+              width="500"
+              height="400"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="philosophy-section">
+      <div class="container">
+        <h2>Unsere Philosophie</h2>
+        <div class="philosophy-grid">
+          <div class="philosophy-card">
+            <div class="philosophy-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+            </div>
+            <h3>Herzliche Gastfreundschaft</h3>
+            <p>
+              Wir behandeln jeden Gast wie einen Freund der Familie. Ihre Zufriedenheit 
+              und Ihr Wohlbefinden stehen für uns an erster Stelle.
+            </p>
+          </div>
+
+          <div class="philosophy-card">
+            <div class="philosophy-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+            <h3>Qualität & Komfort</h3>
+            <p>
+              Wir achten auf jedes Detail, damit Sie sich rundum wohlfühlen. 
+              Von der Ausstattung bis zur Sauberkeit - alles muss perfekt sein.
+            </p>
+          </div>
+
+          <div class="philosophy-card">
+            <div class="philosophy-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/>
+              </svg>
+            </div>
+            <h3>Regionale Verbundenheit</h3>
+            <p>
+              Wir lieben unsere Heimat und teilen gerne unser Wissen über die 
+              besten Plätze, Restaurants und Aktivitäten im Südburgenland.
+            </p>
+          </div>
+
+          <div class="philosophy-card">
+            <div class="philosophy-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.66 7.93L12 2.27 6.34 7.93c-3.12 3.12-3.12 8.19 0 11.31C7.9 20.8 9.95 21.58 12 21.58c2.05 0 4.1-.78 5.66-2.34 3.12-3.12 3.12-8.19 0-11.31zM12 19.59c-1.6 0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1l4.24 4.24C17.38 10.48 18 12 18 13.59s-.62 3.11-1.76 4.24C15.11 18.97 13.6 19.59 12 19.59z"/>
+              </svg>
+            </div>
+            <h3>Nachhaltigkeit</h3>
+            <p>
+              Wir setzen auf umweltfreundliche Praktiken und unterstützen 
+              lokale Produzenten und Dienstleister aus der Region.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <h2>Kontakt zur Familie</h2>
+        <div class="contact-content">
+          <p>
+            Haben Sie Fragen oder möchten Sie mehr über Gina's Landhaus erfahren? 
+            Wir freuen uns auf Ihre Nachricht und helfen Ihnen gerne bei der Planung 
+            Ihres perfekten Aufenthalts.
+          </p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <h4>Telefon</h4>
+              <p><a href="tel:+436643223369">+43 664 322 33 69</a></p>
+            </div>
+            <div class="contact-item">
+              <h4>E-Mail</h4>
+              <p><a href="mailto:office@ginas-landhaus.at">office@ginas-landhaus.at</a></p>
+            </div>
+            <div class="contact-item">
+              <h4>Adresse</h4>
+              <p>
+                Gina's Landhaus im Pinkertal<br>
+                Hauptplatz 11<br>
+                7521 Eberau, Österreich
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="awards-section">
+      <div class="container">
+        <h2>Auszeichnungen & Bewertungen</h2>
+        <div class="awards-content">
+          <div class="awards-grid">
+            <div class="award-card">
+              <div class="award-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+              </div>
+              <h3>Airbnb Superhost</h3>
+              <p>Ausgezeichnet für außergewöhnliche Gastfreundschaft und Service</p>
+            </div>
+
+            <div class="award-card">
+              <div class="award-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+              </div>
+              <h3>Booking.com Award</h3>
+              <p>Gewinner des Guest Review Awards für hervorragende Bewertungen</p>
+            </div>
+
+            <div class="award-card">
+              <div class="award-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+              </div>
+              <h3>Fahrradfreundlich</h3>
+              <p>Zertifiziert als fahrradfreundliche Unterkunft vom ÖAMTC</p>
+            </div>
+          </div>
+
+          <div class="testimonials">
+            <h3>Was unsere Gäste sagen</h3>
+            <div class="testimonial-grid">
+              <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p>
+                  "Ein wunderschönes Ferienhaus mit allem Komfort. Die Gastgeber 
+                  sind sehr herzlich und hilfsbereit. Wir kommen gerne wieder!"
+                </p>
+                <cite>- Familie Schmidt, München</cite>
+              </div>
+
+              <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p>
+                  "Perfekt für unsere Radtour-Gruppe. Sichere Fahrradstellplätze 
+                  und tolle Tipps für die schönsten Routen der Region."
+                </p>
+                <cite>- Radgruppe Köln</cite>
+              </div>
+
+              <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p>
+                  "Das Haus ist liebevoll eingerichtet und sehr sauber. 
+                  Die Lage ist ideal für Entspannung und Naturerlebnisse."
+                </p>
+                <cite>- Petra & Klaus, Hamburg</cite>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .about-page {
+    margin-top: 80px;
+  }
+
+  .page-hero {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-wine) 100%);
+    color: white;
+    padding: var(--spacing-2xl) 0;
+    text-align: center;
+  }
+
+  .page-hero h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .page-hero p {
+    font-size: 1.25rem;
+    color: var(--color-cream);
+  }
+
+  .family-story {
+    padding: var(--spacing-2xl) 0;
+    background: var(--color-cream);
+  }
+
+  .story-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+    align-items: center;
+  }
+
+  .story-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-primary);
+  }
+
+  .story-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .philosophy-section {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .philosophy-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-2xl);
+    color: var(--color-primary);
+  }
+
+  .philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-xl);
+  }
+
+  .philosophy-card {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .philosophy-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .philosophy-icon {
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .philosophy-card h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .philosophy-card p {
+    color: var(--color-text-light);
+    margin: 0;
+  }
+
+  .contact-section {
+    background: var(--color-cream);
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .contact-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-xl);
+    color: var(--color-primary);
+  }
+
+  .contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .contact-content p {
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-xl);
+    color: var(--color-text-light);
+  }
+
+  .contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+  }
+
+  .contact-item {
+    background: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .contact-item h4 {
+    color: var(--color-wine);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.125rem;
+  }
+
+  .contact-item p {
+    color: var(--color-text-light);
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .contact-item a {
+    color: var(--color-wine);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .contact-item a:hover {
+    text-decoration: underline;
+  }
+
+  .awards-section {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .awards-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-2xl);
+    color: var(--color-primary);
+  }
+
+  .awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .award-card {
+    background: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    border-left: 4px solid var(--color-accent);
+  }
+
+  .award-icon {
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .award-card h3 {
+    color: var(--color-wine);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.125rem;
+  }
+
+  .award-card p {
+    color: var(--color-text-light);
+    margin: 0;
+    font-size: 0.875rem;
+  }
+
+  .testimonials h3 {
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xl);
+    font-size: 2rem;
+  }
+
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+  }
+
+  .testimonial {
+    background: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .stars {
+    color: var(--color-accent);
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .testimonial p {
+    color: var(--color-text-light);
+    font-style: italic;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .testimonial cite {
+    color: var(--color-wine);
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+
+  @media (max-width: 768px) {
+    .page-hero h1 {
+      font-size: 2rem;
+    }
+
+    .story-content {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-xl);
+    }
+
+    .story-text {
+      order: 2;
+    }
+
+    .story-image {
+      order: 1;
+    }
+
+    .philosophy-section h2,
+    .contact-section h2,
+    .awards-section h2 {
+      font-size: 2rem;
+    }
+
+    .testimonials h3 {
+      font-size: 1.5rem;
+    }
+  }
+</style>
