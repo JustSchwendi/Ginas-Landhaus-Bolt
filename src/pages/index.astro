@@ -102,7 +102,10 @@ import CookieConsent from '../components/CookieConsent.astro';
                 <span>Hunde willkommen</span>
               </div>
             </div>
-            <a href="/haus" class="btn btn-large">Das Haus entdecken</a>
+            <div id="apartmentIframeAll">
+              <script type="text/javascript" src="https://login.smoobu.com/js/Settings/BookingToolIframe.js"></script>
+              <script>BookingToolIframe.initialize({"url": "https://login.smoobu.com/de/booking-tool/iframe/1359421", "baseUrl": "https://login.smoobu.com", "target": "#apartmentIframeAll"})</script>
+            </div>
           </div>
           <div class="welcome-image">
             <img 
